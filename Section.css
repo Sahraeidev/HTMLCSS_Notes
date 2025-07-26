@@ -1,0 +1,46 @@
+h1 {
+    color: blueviolet;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 10px;
+    font-family: Segoe UI;
+}
+
+h2 {
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+    font-family: Segoe UI;
+    font-weight: 100;
+
+
+}
+
+a {
+    background-color: darksalmon;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: fantasy;
+    padding: 10px;
+}
+
+body {
+    font-family: Tahoma;
+}
+
+li span {
+    color: blueviolet;
+}
+
+#notice {
+    color: crimson;
+}
+
+.syntax {
+    color: rgb(104, 255, 172);
+    background-color: black;
+}
+
+.syntax:hover {
+    color: rgb(255, 114, 114);
+}

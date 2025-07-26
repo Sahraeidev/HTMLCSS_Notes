@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Section.css">
+    <title>Section 5</title>
+</head>
+
+<body>
+    <a href="Section4.html">Go Back</a>
+    <h1>CSS Section 2</h1>
+
+    <h2>Selector</h2>
+    <p>Is used for using it on diffrent element and giving all of them the same css properties</p>
+    <p>we have multiple types of selectors like :</p>
+    <ul>
+        <li><span>Element selector</span>: select all of the elements of that type and gives them the same property
+            changes / You
+            can also select multiple elements and writing thier name next to each other</li>
+        <li><span>ID Selector</span>: you can use the id attibute on a single element and style it diffrently from the
+            others and
+            use it like this on css<span class="syntax"> #idname {color : black;}</span></li>
+        <li><span>Class selector</span>: is one of the most commonly used its used for multiple elements to be style
+            similary and
+            its used by using the class attribute on the elements that you want and on the css file use <span
+                class="syntax">.classname{
+                color : blue};</span></li>
+        <li><span>Descendant selector</span>: <span class="syntax">[element] [nested elements inside the element before
+                that you want to
+                change] {}</span> this type of selector is used to style the elements that are nested inside another
+            element </li>
+        <li><span>Adjacent selector</span> : <span class="syntax">h1 + p {color : red};</span> selects the paragraphs
+            that come after h1</li>
+        <li><span>Direct child</span> : <span class="syntax">div > li {}</span>selects the li that are direct children
+            of the div</li>
+        <li><span>Attribute selector</span> : selects all the elements with a specific attribute <span
+                class="syntax">input[type="text"]{} </span>
+        </li>
+    </ul>
+
+
+    <p><i><span id="notice">If you want to give a property to everything you can use the * selector</span></i></p>
+
+
+    <h2>Pseudo classes</h2>
+    <p>Keywords added to a selector that specifies a special state of the selected element</p>
+    <p><span class="syntax">selector:peusdoclass {color : blue;}</span></p>
+    <ul>
+        <li><span>:hover </span>: when the element is beign hovered</li>
+        <li><span>:active</span> : when something is active (when you click on a link but dont release it)</li>
+        <li><span>:checked</span> : when something is checked (radio buttons and checks and selects)</li>
+        <li><span>:nth-of-type(NUMBER(3) or NUMBERn(Selecting every n number like 3n selects every 3 number like 3 , 6,
+                9))</span> : styles the NUMBER(like third) of that element</li>
+    </ul>
+    <p><i>READ MDN FOR MORE</i></p>
+
+
+    <h2>Pseudo elements</h2>
+    <p>Keyword added to a selector that lets you style a particular part of selected element(s)</p>
+    <p><span class="syntax">selector::psudo-element</span></p>
+    <p><i>READ MDN</i></p>
+
+    <p><i>If you add !important to any css property it will proirtizes that style no matter the order</i></p>
+    <h2>CSS inheritance</h2>
+    <p>Some css properties will inhert to thier child</p>
+    <a href="Section6.html">Section6</a>
+
+</body>
+
+</html>

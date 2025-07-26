@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Section 3
+    </title>
+</head>
+
+<body>
+    <a href="Section2.html">Go Back</a>
+    <h1>HTML Section 3</h1>
+
+    <div>
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Element name</th>
+                    <th>Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>table</td>
+                    <td>Its used for showing data</td>
+                </tr>
+                <tr>
+                    <td>td </td>
+                    <td>Table data is a cell</td>
+                </tr>
+                <tr>
+                    <td>tr</td>
+                    <td>table row for grouping</td>
+                </tr>
+                <tr>
+                    <td>th</td>
+                    <td>Defines a header</td>
+                </tr>
+                <tr>
+                    <td>thead/tbody/tfooter</td>
+                    <td>doesnt do anything exept for being neat like section and divs</td>
+                </tr>
+                <tr>
+                    <td>colspan/rowspan</td>
+                    <td>attribute that tells cells how many cells they get</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Forms</h2>
+        <p>they are very simple,form element is where inside it we create our form</p>
+        <h3>attributes</h3>
+        <ul>
+            <li>action attribute tell what happens after the form is submitted an http request will be sent</li>
+            <li>method attribute choeses the method of http request</li>
+        </ul>
+        <h3>inputs</h3>
+        <ul>
+            <li>input : more 20 types are inputs are there based on the type attribute of it,placeholder attribute is
+                placed before we type anything</li>
+            <li>label : they are linked with thier input for that we have to use the "id" in input element and "for" in
+                label
+            </li>
+            <li>buttons : by defualt its submits form but you can change its behavior by changin its type attribute
+            </li>
+            <li>Checkbox : has checked attribute for setting its default</li>
+            <li>Radio : only one can be selected in a group,for grouping them by giving them the same name and the value
+                attribute is what will be sent when the form is submitted</li>
+            <li>select and option : are used to create drop downs and the selected attribute is for setting a defualt
+            </li>
+            <li>Range : min and max attribute and step is what is goes up and down</li>
+            <li>Text area element : rows and cols attribute</li>
+        </ul>
+        <p><i>Name attribute is for refering to value when the data is sent</i></p>
+        <form action="/Section1.html">
+            <p>
+                <label for="name">Enter your name</label>
+                <input type="text" placeholder="Steve" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="password">Enter your password</label>
+                <input type="password" placeholder="1234" id="password" name="password" required>
+            </p>
+            <p>
+                <select>
+                    <option value="">Student</option>
+                    <option value="">Worker</option>
+                </select>
+            </p>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <p>You can add validations from browser in your forms by using the attribute required , minlenght , maxlenght
+        </p>
+        <p>some inputs have built in validations</p>
+    </div>
+
+    <a href="Section4.html">Section4</a>
+
+</body>
+
+</html>
