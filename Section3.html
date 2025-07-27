@@ -1,104 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Section 3
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 3</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <a href="Section2.html">Go Back</a>
-    <h1>HTML Section 3</h1>
+<a href="Section2.html">Go Back</a>
+<h1>HTML Section 3</h1>
 
-    <div>
-        <h2>Tables</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Element name</th>
-                    <th>Use</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>table</td>
-                    <td>Its used for showing data</td>
-                </tr>
-                <tr>
-                    <td>td </td>
-                    <td>Table data is a cell</td>
-                </tr>
-                <tr>
-                    <td>tr</td>
-                    <td>table row for grouping</td>
-                </tr>
-                <tr>
-                    <td>th</td>
-                    <td>Defines a header</td>
-                </tr>
-                <tr>
-                    <td>thead/tbody/tfooter</td>
-                    <td>doesnt do anything exept for being neat like section and divs</td>
-                </tr>
-                <tr>
-                    <td>colspan/rowspan</td>
-                    <td>attribute that tells cells how many cells they get</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<!-- Tables Section -->
+<section>
+    <h2>Tables</h2>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Element Name</th>
+            <th>Use</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><code>&lt;table&gt;</code></td>
+            <td>Used for displaying tabular data.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;td&gt;</code></td>
+            <td>Defines a cell in the table (table data).</td>
+        </tr>
+        <tr>
+            <td><code>&lt;tr&gt;</code></td>
+            <td>Defines a row of cells in the table.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;th&gt;</code></td>
+            <td>Defines a header cell.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code></td>
+            <td>Used to organize the table semantically. Helps with structure but not necessary for rendering.</td>
+        </tr>
+        <tr>
+            <td><code>colspan</code> / <code>rowspan</code></td>
+            <td>Attributes that allow a cell to span multiple columns or rows.</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
 
-    <div>
-        <h2>Forms</h2>
-        <p>they are very simple,form element is where inside it we create our form</p>
-        <h3>attributes</h3>
-        <ul>
-            <li>action attribute tell what happens after the form is submitted an http request will be sent</li>
-            <li>method attribute choeses the method of http request</li>
-        </ul>
-        <h3>inputs</h3>
-        <ul>
-            <li>input : more 20 types are inputs are there based on the type attribute of it,placeholder attribute is
-                placed before we type anything</li>
-            <li>label : they are linked with thier input for that we have to use the "id" in input element and "for" in
-                label
-            </li>
-            <li>buttons : by defualt its submits form but you can change its behavior by changin its type attribute
-            </li>
-            <li>Checkbox : has checked attribute for setting its default</li>
-            <li>Radio : only one can be selected in a group,for grouping them by giving them the same name and the value
-                attribute is what will be sent when the form is submitted</li>
-            <li>select and option : are used to create drop downs and the selected attribute is for setting a defualt
-            </li>
-            <li>Range : min and max attribute and step is what is goes up and down</li>
-            <li>Text area element : rows and cols attribute</li>
-        </ul>
-        <p><i>Name attribute is for refering to value when the data is sent</i></p>
-        <form action="/Section1.html">
-            <p>
-                <label for="name">Enter your name</label>
-                <input type="text" placeholder="Steve" id="name" name="name" required>
-            </p>
-            <p>
-                <label for="password">Enter your password</label>
-                <input type="password" placeholder="1234" id="password" name="password" required>
-            </p>
-            <p>
-                <select>
-                    <option value="">Student</option>
-                    <option value="">Worker</option>
-                </select>
-            </p>
+<!-- Forms Section -->
+<section>
+    <h2>Forms</h2>
+    <p>The <code>&lt;form&gt;</code> element is used to collect user input.</p>
+
+    <h3>Important Form Attributes</h3>
+    <ul>
+        <li><strong>action</strong>: Specifies where to send the form data (URL).</li>
+        <li><strong>method</strong>: Defines the HTTP method (<code>GET</code> or <code>POST</code>).</li>
+    </ul>
+
+    <h3>Common Form Elements</h3>
+    <ul>
+        <li><strong>&lt;input&gt;</strong>: Most common form element with multiple types (text, password, email, etc.). Use <code>placeholder</code> for hints.</li>
+        <li><strong>&lt;label&gt;</strong>: Associated with an input using the <code>for</code> attribute (must match input’s <code>id</code>).</li>
+        <li><strong>&lt;button&gt;</strong>: Default behavior is submitting the form. You can change it using the <code>type</code> attribute.</li>
+        <li><strong>Checkbox</strong>: Use <code>checked</code> to make it selected by default.</li>
+        <li><strong>Radio buttons</strong>: Only one can be selected within a group (same <code>name</code> value). The <code>value</code> is sent when submitted.</li>
+        <li><strong>&lt;select&gt; &amp; &lt;option&gt;</strong>: Used for dropdowns. Use <code>selected</code> for the default choice.</li>
+        <li><strong>Range</strong>: Use <code>min</code>, <code>max</code>, and <code>step</code> for range inputs.</li>
+        <li><strong>&lt;textarea&gt;</strong>: Multi-line text input. Use <code>rows</code> and <code>cols</code> attributes to control size.</li>
+    </ul>
+
+    <p><em>The <code>name</code> attribute is used to reference each input’s value when the form is submitted.</em></p>
+
+    <form action="/Section1.html" method="GET">
+        <p>
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" placeholder="Steve" required>
+        </p>
+        <p>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password" placeholder="1234" required>
+        </p>
+        <p>
+            <label for="role">Select your role:</label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="worker">Worker</option>
+            </select>
+        </p>
+        <p>
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
-        </form>
-        <p>You can add validations from browser in your forms by using the attribute required , minlenght , maxlenght
         </p>
-        <p>some inputs have built in validations</p>
-    </div>
+    </form>
 
-    <a href="Section4.html">Section4</a>
+    <p>You can add client-side validation using attributes like <code>required</code>, <code>minlength</code>, <code>maxlength</code>, etc.</p>
+    <p>Some input types (like <code>email</code> or <code>url</code>) come with built-in validation.</p>
+</section>
 
+<a href="Section4.html">Next: Section 4</a>
 </body>
 
 </html>

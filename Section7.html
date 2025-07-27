@@ -9,57 +9,63 @@
 </head>
 
 <body>
-    <a href="Section6.html">Go Back</a>
-    <h1>CSS Section 4</h1>
+<a href="Section6.html">Go Back</a>
+<h1>CSS Section 4</h1>
 
-    <h2>Opacity & Alpha channel</h2>
-    <h3>Alpha channel</h3>
-    <p>in RGBA its a value from 0 to 1 ,0 is trasparent and 1 is the oposite</p>
-    <p>ex rgba(1,3,4,alpha)</p>
-    <h3>Opacity</h3>
-    <p>Its a property for controlling the transparansy of the element</p>
+<h2>Opacity & Alpha Channel</h2>
 
-    <h2>Position</h2>
-    <p>Its a confusing property and super useful and sets how a element is positioned in the document</p>
-    <ul>
-        <li>Static : it is the default option,</li>
-        <li>Reletive : is going to keep the element in the flow of the document but we can ofset it reletive to itself
-            using top left right bottom properties</li>
-        <li>Absolute : the element is removed from the normal document flow and no space is created from the element
-            and when you change its position it changes reletive to its parent or a positioned element</li>
-        <li>Fixed : it has a fixed position</li>
-    </ul>
+<h3>Alpha Channel</h3>
+<p>In <code>rgba</code>, the alpha channel is a value between <code>0</code> and <code>1</code>. A value of <code>0</code> means fully transparent, and <code>1</code> means fully opaque.</p>
+<p>Example: <code>rgba(1, 3, 4, alpha)</code></p>
 
-    <h2>CSS Transitions</h2>
-    <p>allows us to transition between two propety value</p>
-    <p class="syntax">Transition : element duration time-function delay</p>
-    <h2>CSS Tranform (ReadMDN)</h2>
-    <p>Its the best way of moving scaling and rotating</p>
-    <h3>Rotate</h3>
-    <p class="syntax">Transform : rotate(angle)</p>
-    <h3>Scale</h3>
-    <p class="syntax">Transform : scale()</p>
-    <h3>Moving</h3>
-    <p class="syntax">Transform : translate(X,Y)</p>
-    <h3>Skew</h3>
-    <p class="syntax">Transform : skew(X,Y)</p>
-    <h3>Transform origin</h3>
-    <p>You can change the transform origin from the center</p>
+<h3>Opacity</h3>
+<p><code>opacity</code> is a CSS property used to control the transparency of an element. It also accepts values between <code>0</code> (fully transparent) and <code>1</code> (fully opaque).</p>
 
-    <p>You can combine all of transforms by spaces in a single transfom property</p>
+<h2>Position</h2>
+<p>The <code>position</code> property defines how an element is positioned in the document. It is powerful but can be confusing at first:</p>
+<ul>
+    <li><b>static</b> – Default position; the element follows the normal flow of the document.</li>
+    <li><b>relative</b> – Keeps the element in the flow, but allows offsetting it relative to itself using <code>top</code>, <code>left</code>, <code>right</code>, or <code>bottom</code>.</li>
+    <li><b>absolute</b> – Removes the element from the normal flow. It is positioned relative to the nearest positioned ancestor (or the viewport if none).</li>
+    <li><b>fixed</b> – The element is positioned relative to the viewport and stays fixed during scrolling.</li>
+</ul>
 
-    <h2>Background</h2>
-    <ul>
-        <li>background-color</li>
-        <li>back-ground-image : url()</li>
-        <li>background-size</li>
-        <li>background-position</li>
-        <li>background-attachment</li>
-        <li>background : all of above (size must come after position) you can also have another back ground with ","
-        </li>
-    </ul>
+<h2>CSS Transitions</h2>
+<p>CSS transitions allow smooth changes between property values over a specified duration.</p>
+<p class="syntax">transition: property duration timing-function delay;</p>
 
-    <a href="Section8.html">Section8</a>
+<h2>CSS Transform (Read MDN)</h2>
+<p>The <code>transform</code> property allows you to move, rotate, scale, and skew elements.</p>
+
+<h3>Rotate</h3>
+<p class="syntax">transform: rotate(angle);</p>
+
+<h3>Scale</h3>
+<p class="syntax">transform: scale(x, y);</p>
+
+<h3>Translate</h3>
+<p class="syntax">transform: translate(x, y);</p>
+
+<h3>Skew</h3>
+<p class="syntax">transform: skew(x-angle, y-angle);</p>
+
+<h3>Transform Origin</h3>
+<p>Defines the point of origin for the transformation (default is the center).</p>
+<p class="syntax">transform-origin: center;</p>
+
+<p>You can combine multiple transformations in a single <code>transform</code> property by separating them with spaces.</p>
+
+<h2>Background</h2>
+<ul>
+    <li><code>background-color</code></li>
+    <li><code>background-image: url("...")</code></li>
+    <li><code>background-size</code></li>
+    <li><code>background-position</code></li>
+    <li><code>background-attachment</code></li>
+    <li><code>background</code> – A shorthand for all the above properties. Note: <code>background-size</code> must come after <code>background-position</code>. You can also stack multiple backgrounds using a comma (<code>,</code>).</li>
+</ul>
+
+<a href="Section8.html">Next: Section 8</a>
 </body>
 
 </html>

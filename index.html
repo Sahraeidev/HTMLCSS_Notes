@@ -2,88 +2,80 @@
 <html>
 
 <head>
-    <title>Section-1</title>
+    <title>Section 1</title>
 </head>
 
 <body>
-    <h1>This is a website for <i>learning HTML</i></h1>
+<h1>This is a website for <i>learning HTML</i></h1>
 
-    <div>
-        <h2>Paragraph tag</h2>
-        <p>This is an example of a paragraph tag its very useful for seperating diffrent parts</p>
-        <p>This is a seperate paragraph</p>
-    </div>
+<div>
+    <h2>Paragraph Tag</h2>
+    <p>This is an example of a paragraph tag. It is very useful for separating different parts of the content.</p>
+    <p>This is a separate paragraph.</p>
+</div>
 
+<div>
+    <h2>Heading Tags</h2>
+    <p>Headings are very useful tags used for titles and subheadings. They range from h1 to h6, where a higher number represents a subsection of a lower number, as shown below:</p>
+    <p><i>It’s best to use only one h1 per page as the main topic of the page.</i></p>
+    <p><i>Don’t use heading tags just for their size. Use an h2 only if there is an h1 before it.</i></p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+</div>
 
-    <div>
-        <h2>Heading tags</h2>
-        <p>heading is a very useful tag that is used for headings and has diffrent numbers each bigger
-            number is a subsection of a smaller number like below</p>
-        <p><i>Its best that we use only one h1 for each page that is the main topic of the page</i></p>
-        <p><i>Dont use them for thier size and use a h2 if you have an h1</i></p>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-    </div>
+<div>
+    <h2>HTML Boilerplate</h2>
+    <p>This is the most important part of an HTML file that makes it valid and functional.</p>
+    <p><b>&lt;!DOCTYPE html&gt;</b>: This declaration tells the browser that we are using HTML5.</p>
+    <p><b>&lt;html&gt;</b>: The root element of the HTML document, which contains the <code>head</code> and <code>body</code> sections.</p>
+    <p><b>&lt;head&gt;</b>: This section contains meta-information and other tags that are not displayed directly on the page.</p>
+    <p><b>&lt;body&gt;</b>: This section contains the visible content of the page such as paragraphs and headings.</p>
+</div>
 
-    <div>
-        <h2>HTML boilerplate</h2>
-        <p>Its the most important part of an html file that makes our html file valied</p>
-        <p><b>!DOCTYPE html</b> : Its a flag that tells the browser we are using html 5</p>
-        <p><b>html</b> : its the main tag of html file that contains to tags head and body</p>
-        <p><b>head</b> : its a tag that contains the tags that will not be shown on the page</p>
-        <p><b>body</b> : its a tag that contains the content of the page like the\
-            paragraph and the heading tag</p>
+<div>
+    <h2>Title Tag</h2>
+    <p>The <code>&lt;title&gt;</code> tag belongs in the <code>&lt;head&gt;</code> section and sets the name of the browser tab.</p>
+</div>
 
-    </div>
+<div>
+    <h2>List Elements</h2>
+    <p>There are two types of list elements:</p>
+    <ul>
+        <li>Ordered List</li>
+        <li>Unordered List</li>
+    </ul>
+    <p>To add an item to a list, use the <code>&lt;li&gt;</code> tag inside the list. You can also nest other elements inside <code>&lt;li&gt;</code> elements.</p>
+</div>
 
-    <div>
-        <h2>Title tag</h2>
-        <p>Its a tag that belongs to the head tag and changes the name of the tab in browser</p>
-    </div>
+<div>
+    <h2>Anchor Tag</h2>
+    <p>The <code>&lt;a&gt;</code> tag is used for creating hyperlinks, as shown below. To specify the link destination, use the <code>href</code> attribute.</p>
+    <a href="AboutTheDeveloper.html">About me</a>
+</div>
 
-    <div>
-        <h2>List elements</h2>
-        <p>There are two type of list elements</p>
-        <ul>
-            <li>Ordered list</li>
-            <li>Unordered list</li>
-        </ul>
-        <p>if you want to add an item to each you must use li tag as a child of
-            each list and you can nest other elements in li elements</p>
+<div>
+    <h2>Attributes</h2>
+    <p>Attributes provide additional information about HTML elements. They are added inside the opening tag.</p>
+</div>
 
-    </div>
+<div>
+    <h2>Image Tag</h2>
+    <p>The <code>&lt;img&gt;</code> tag is a self-closing tag used to display images. You must use the <code>src</code> attribute to specify the image path.</p>
+    <p>The <code>alt</code> attribute is useful when the image cannot be loaded. It provides alternative text describing the image.</p>
+    <img src="/Images/Image.png" alt="A random logo">
+</div>
 
-    <div>
-        <h2>Anchor tag</h2>
-        <p>Its a tag for hyperlinks like below,for giving the a tag a link we use the href attribute</p>
-        <a href="AboutTheDeveloper.html">About me</a>
-    </div>
+<div>
+    <h2>Comments</h2>
+    <p>Comments are not rendered in the browser and are used as notes in your code.</p>
+    <!-- This is an example of a comment -->
+</div>
 
-
-    <div>
-        <h2>Attributes</h2>
-        <p>Informations that we give inside the tags</p>
-    </div>
-
-    <div>
-        <h2>Image tag</h2>
-        <p>A tag that does not have a closing tag and you have to use the source attribute for its image</p>
-        <p>alt attribute is very usefull when a picture is not loading its a text about the picture</p>
-        <img src="/Images/Image.png" alt="A random logo">
-    </div>
-
-    <div>
-        <h2>Comments</h2>
-        <p>Will not be redered in your browser and are for notes in your file</p>
-        <!--This is an example of a comment-->
-    </div>
-
-
-    <a href="Section2.html">Section2</a>
+<a href="Section2.html">Section 2</a>
 </body>
 
 </html>

@@ -4,49 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Section4</title>
+    <title>Section 4</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-    <a href="Section3.html">Go Back</a>
-    <h1>CSS Section 1</h1>
+<a href="Section3.html">Go Back</a>
+<h1>CSS Section 1</h1>
 
+<h2>CSS Rules</h2>
+<p>Basic structure of a CSS rule:</p>
+<p><code>selector { property: value; }</code></p>
+<p>Example: <code>h1 { color: purple; }</code> sets the color of all <code>&lt;h1&gt;</code> elements to purple.</p>
 
-    <h2>CSS Rules</h2>
-    <p>css structure</p>
-    <p>selector : { property : value ;}</p>
-    <p>h1 { color : purple ;} an example that sets all the h1 purple</p>
-    <!--Add css-->
-    <h2>How to write them</h2>
-    <p>We have three options</p>
-    <ol>
-        <li>Directly inline in html elements : by using the style attribute like h1 style: backgroundcolor : blue; but
-            its not a good way</li>
-        <li>By using the Style element in the head element and write for what element you want what things to happen but
-            its not a good way either like : style h1{ color : blue;}</li>
-        <li>Writing a new file are write our css there so we can link it to the our html files and for link it we have
-            to use the link element in head link href="cssfile" rel ="stylesheet"</li>
-    </ol>
-    <h2>Some commonly used properties</h2>
-    <ul>
-        <li>color : changes the text color</li>
-        <li>background color : :|</li>
-        <li>background : does more than background color and has more options</li>
-        <li>text align : Sets the horizantal alignment within an element</li>
-        <li>width and height : :|</li>
-        <li>font wight : boldness of a text we can use keyword or numbers(100/900) to set it</li>
-        <li>text decoration : read doc</li>
-        <li>line height</li>
-        <li>letter spacing </li>
-        <li>font-size : you can set in multiple ways but the best ones</li>
-        <li>font-familty : is for changing the fonts,we can download them or use the browser fonts we will learn that
-            later,you can chose multiple fonts in case the user does not have that font</li>
-    </ul>
+<h2>How to Write CSS</h2>
+<p>There are three main ways to write CSS:</p>
+<ol>
+    <li><strong>Inline CSS</strong> – Directly inside HTML elements using the <code>style</code> attribute.<br>
+        Example: <code>&lt;h1 style="background-color: blue;"&gt;</code><br>
+        ⚠️ Not recommended for larger projects.
+    </li>
+    <li><strong>Internal CSS</strong> – Using a <code>&lt;style&gt;</code> tag inside the <code>&lt;head&gt;</code> of your HTML.<br>
+        Example: <code>&lt;style&gt; h1 { color: blue; } &lt;/style&gt;</code><br>
+        ⚠️ Still not ideal for reusable styles.
+    </li>
+    <li><strong>External CSS</strong> – Writing CSS in a separate file and linking it using a <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code>.<br>
+        Example: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code><br>
+        ✅ This is the best and most scalable method.
+    </li>
+</ol>
 
-    <a href="Section5.html">Section5</a>
+<h2>Commonly Used CSS Properties</h2>
+<ul>
+    <li><code>color</code> – Sets the text color.</li>
+    <li><code>background-color</code> – Sets the background color.</li>
+    <li><code>background</code> – A shorthand that includes color, image, position, size, etc.</li>
+    <li><code>text-align</code> – Controls horizontal alignment of text (e.g., <code>left</code>, <code>center</code>, <code>right</code>).</li>
+    <li><code>width</code> and <code>height</code> – Define the dimensions of elements.</li>
+    <li><code>font-weight</code> – Sets the boldness of text. Use keywords like <code>bold</code> or numeric values like <code>100–900</code>.</li>
+    <li><code>text-decoration</code> – Adds or removes decorations like underline. (Read docs for full options)</li>
+    <li><code>line-height</code> – Controls vertical spacing between lines of text.</li>
+    <li><code>letter-spacing</code> – Adjusts spacing between letters.</li>
+    <li><code>font-size</code> – Sets the size of the text. Can be set in <code>px</code>, <code>em</code>, <code>rem</code>, etc.</li>
+    <li><code>font-family</code> – Changes the font. You can specify multiple fonts as fallbacks in case the user's browser doesn't support the first one.</li>
+</ul>
 
+<a href="Section5.html">Next: Section 5</a>
 </body>
 
 </html>

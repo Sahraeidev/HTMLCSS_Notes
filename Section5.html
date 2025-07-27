@@ -4,69 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Section 5</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <a href="Section4.html">Go Back</a>
-    <h1>CSS Section 2</h1>
+<a href="Section4.html">Go Back</a>
+<h1>CSS Section 2</h1>
 
-    <h2>Selector</h2>
-    <p>Is used for using it on diffrent element and giving all of them the same css properties</p>
-    <p>we have multiple types of selectors like :</p>
-    <ul>
-        <li><span>Element selector</span>: select all of the elements of that type and gives them the same property
-            changes / You
-            can also select multiple elements and writing thier name next to each other</li>
-        <li><span>ID Selector</span>: you can use the id attibute on a single element and style it diffrently from the
-            others and
-            use it like this on css<span class="syntax"> #idname {color : black;}</span></li>
-        <li><span>Class selector</span>: is one of the most commonly used its used for multiple elements to be style
-            similary and
-            its used by using the class attribute on the elements that you want and on the css file use <span
-                class="syntax">.classname{
-                color : blue};</span></li>
-        <li><span>Descendant selector</span>: <span class="syntax">[element] [nested elements inside the element before
-                that you want to
-                change] {}</span> this type of selector is used to style the elements that are nested inside another
-            element </li>
-        <li><span>Adjacent selector</span> : <span class="syntax">h1 + p {color : red};</span> selects the paragraphs
-            that come after h1</li>
-        <li><span>Direct child</span> : <span class="syntax">div > li {}</span>selects the li that are direct children
-            of the div</li>
-        <li><span>Attribute selector</span> : selects all the elements with a specific attribute <span
-                class="syntax">input[type="text"]{} </span>
-        </li>
-    </ul>
+<h2>Selectors</h2>
+<p>Selectors are used to target HTML elements and apply the same CSS properties to them.</p>
+<p>There are several types of selectors:</p>
+<ul>
+    <li><span>Element Selector</span>: Selects all elements of a given type. You can also select multiple types by listing them with commas.</li>
 
+    <li><span>ID Selector</span>: Targets a specific element with a unique <code>id</code> attribute. Syntax: <span class="syntax">#idname { color: black; }</span></li>
 
-    <p><i><span id="notice">If you want to give a property to everything you can use the * selector</span></i></p>
+    <li><span>Class Selector</span>: One of the most commonly used selectors. It allows you to style multiple elements using a shared <code>class</code> attribute. Syntax: <span class="syntax">.classname { color: blue; }</span></li>
 
+    <li><span>Descendant Selector</span>: Selects elements nested inside a specific element. Syntax: <span class="syntax">parent child { }</span></li>
 
-    <h2>Pseudo classes</h2>
-    <p>Keywords added to a selector that specifies a special state of the selected element</p>
-    <p><span class="syntax">selector:peusdoclass {color : blue;}</span></p>
-    <ul>
-        <li><span>:hover </span>: when the element is beign hovered</li>
-        <li><span>:active</span> : when something is active (when you click on a link but dont release it)</li>
-        <li><span>:checked</span> : when something is checked (radio buttons and checks and selects)</li>
-        <li><span>:nth-of-type(NUMBER(3) or NUMBERn(Selecting every n number like 3n selects every 3 number like 3 , 6,
-                9))</span> : styles the NUMBER(like third) of that element</li>
-    </ul>
-    <p><i>READ MDN FOR MORE</i></p>
+    <li><span>Adjacent Sibling Selector</span>: Selects an element that comes immediately after another. Example: <span class="syntax">h1 + p { color: red; }</span></li>
 
+    <li><span>Direct Child Selector</span>: Selects only direct child elements. Example: <span class="syntax">div > li { }</span></li>
 
-    <h2>Pseudo elements</h2>
-    <p>Keyword added to a selector that lets you style a particular part of selected element(s)</p>
-    <p><span class="syntax">selector::psudo-element</span></p>
-    <p><i>READ MDN</i></p>
+    <li><span>Attribute Selector</span>: Selects elements that contain a specific attribute. Example: <span class="syntax">input[type="text"] { }</span></li>
+</ul>
 
-    <p><i>If you add !important to any css property it will proirtizes that style no matter the order</i></p>
-    <h2>CSS inheritance</h2>
-    <p>Some css properties will inhert to thier child</p>
-    <a href="Section6.html">Section6</a>
+<p><i><span id="notice">If you want to apply a property to all elements, you can use the universal selector: <code>*</code></span></i></p>
 
+<h2>Pseudo-Classes</h2>
+<p>Pseudo-classes are keywords added to selectors that define a special state of an element.</p>
+<p>Syntax: <span class="syntax">selector:pseudoclass { property: value; }</span></p>
+<ul>
+    <li><span>:hover</span> – When the mouse is hovering over an element.</li>
+    <li><span>:active</span> – When an element (like a link) is being clicked.</li>
+    <li><span>:checked</span> – When a checkbox or radio button is checked.</li>
+    <li><span>:nth-of-type()</span> – Targets elements based on their order. Example:
+        <ul>
+            <li><code>:nth-of-type(3)</code> selects the third matching element.</li>
+            <li><code>:nth-of-type(3n)</code> selects every third element (3, 6, 9...)</li>
+        </ul>
+    </li>
+</ul>
+<p><i>Read the MDN documentation for more pseudo-classes.</i></p>
+
+<h2>Pseudo-Elements</h2>
+<p>Pseudo-elements allow you to style specific parts of elements.</p>
+<p>Syntax: <span class="syntax">selector::pseudo-element</span></p>
+<p>Examples include <code>::before</code>, <code>::after</code>, <code>::first-line</code>, and <code>::first-letter</code>.</p>
+<p><i>Read MDN for more details.</i></p>
+
+<p><i>If you add <code>!important</code> to a CSS property, it will override all other rules regardless of order.</i></p>
+
+<h2>CSS Inheritance</h2>
+<p>Some CSS properties (like <code>color</code> and <code>font-family</code>) are inherited by child elements from their parent.</p>
+
+<a href="Section6.html">Next: Section 6</a>
 </body>
 
 </html>
